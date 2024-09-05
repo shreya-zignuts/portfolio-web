@@ -9,7 +9,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Projects</a></li>
       <li><a href="#achievement">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="contact-me"><a href="#contact">Contact</a></li>
     </ul>
     <div id="menu-icon" class="bx bx-menu"></div>
   </header>
@@ -35,5 +35,4 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Add your scoped CSS here */
 </style>

@@ -35,7 +35,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 22px 16%;
+    padding: 22px 6%;
     border-bottom: 1px solid transparent;
     transition: all .40s ease;
 }
@@ -407,7 +407,7 @@ header.sticky {
 
 @media (max-width: 1325px) {
     header {
-        padding: 16px 3%;
+        padding: 16px 6%;
     }
 
     header.sticky {
@@ -473,7 +473,6 @@ header.sticky {
     .navbar a {
         display: block;
         padding: 1rem;
-        margin: 1rem;
     }
 
     .navbar.active {
@@ -483,6 +482,26 @@ header.sticky {
     :root {
         --h1-font: 3.7rem;
         --h2-font: 2.7rem;
+    }
+
+    .home-text h2{
+        font-size: 52px;
+    }
+
+    .row{
+        max-width: 302px;
+    }
+
+    .contact-card{
+        max-width: 220px;
+    }
+
+    .contact-card a{
+        font-size: 0.8rem;
+    }
+    
+    .animated-text{
+        font-size: 54px;
     }
 }
 
