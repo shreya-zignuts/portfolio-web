@@ -24,31 +24,31 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { gsap } from 'gsap';
+  import { ref, onMounted } from 'vue';
+  import { gsap } from 'gsap';
 
-const ExperienceText = ref(null);
+  const ExperienceText = ref(null);
 
-const animateOnScroll = (entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      gsap.fromTo(ExperienceText.value, 
-        { opacity: 0, y: -50, scale: 1.1 }, 
-        { opacity: 1, y: 0, scale: 1, duration: 1.5, ease: 'bounce.out' }
-      );
-    }
+  const animateOnScroll = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        gsap.fromTo(ExperienceText.value, 
+          { opacity: 0, y: -50, scale: 1.1 }, 
+          { opacity: 1, y: 0, scale: 1, duration: 1.5, ease: 'bounce.out' }
+        );
+      }
+    });
+  }
+
+  onMounted(() => {
+    const observer = new IntersectionObserver(animateOnScroll, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    });
+
+    observer.observe(ExperienceText.value);
   });
-}
-
-onMounted(() => {
-  const observer = new IntersectionObserver(animateOnScroll, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  });
-
-  observer.observe(ExperienceText.value);
-});
 </script>
 
 <style scoped>
