@@ -2,7 +2,7 @@
   <section class="languages" id="languages">
     <div class="inner">
       <div class="Tech_header">
-        <h1 ref="LanguageText">Languages</h1>
+        <h2 ref="LanguageText">Languages</h2>
       </div>
       <div class="carousel-container">
         <div class="carousel">
@@ -46,15 +46,15 @@ import { gsap } from "gsap";
 
 const LanguageText = ref(null);
 const skills = [
-  { name: "C++", img: require("@/img/C++.png"), level: 70 },
-  { name: "HTML", img: require("@/img/html-5.png"), level: 95 },
-  { name: "CSS", img: require("@/img/css-3.png"), level: 70 },
-  { name: "JavaScript", img: require("@/img/js.png"), level: 70 },
-  { name: "JQuery", img: require("@/img/social.png"), level: 60 },
-  { name: "PHP", img: require("@/img/php.png"), level: 85 },
-  { name: "Laravel", img: require("@/img/icons8-laravel-64.png"), level: 90 },
-  { name: "Symfony", img: require("@/img/symfony-seeklogo.svg"), level: 70 },
-  { name: "Vue JS", img: require("@/img/icons8-vue-js-96.png"), level: 40 },
+  { name: "C++", img: require("@/img/C++.png"), level: 60 },
+  { name: "HTML", img: require("@/img/html-5.png"), level: 75 },
+  { name: "CSS", img: require("@/img/css-3.png"), level: 60 },
+  { name: "JavaScript", img: require("@/img/js.png"), level: 60 },
+  { name: "JQuery", img: require("@/img/social.png"), level: 50 },
+  { name: "PHP", img: require("@/img/php.png"), level: 75 },
+  { name: "Laravel", img: require("@/img/icons8-laravel-64.png"), level: 80 },
+  { name: "Symfony", img: require("@/img/symfony-seeklogo.svg"), level: 50 },
+  { name: "Vue JS", img: require("@/img/icons8-vue-js-96.png"), level: 30 },
 ];
 
 const animateOnScroll = (entries) => {
@@ -109,7 +109,7 @@ onMounted(() => {
   will-change: transform;
 }
 
-h1 {
+h2 {
   font-size: 3.5rem;
 }
 
