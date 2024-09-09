@@ -82,4 +82,10 @@ onMounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 830px) {
+  .row {
+    max-width: 480px;
+  }
+}
+</style>

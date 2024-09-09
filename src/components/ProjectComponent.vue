@@ -118,4 +118,10 @@ onMounted(() => {
 .project-image.animate {
   transform: scale(1) rotate(0);
 }
+
+@media (max-width: 830px) {
+  .row {
+    max-width: 480px;
+  }
+}
 </style>
