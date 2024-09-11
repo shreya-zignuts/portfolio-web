@@ -39,17 +39,17 @@ const projectImages = ref([]);
 
 const projects = [
   {
-    img: require("@/img/crm.png"),
+    img: require("@/assets/img/crm.png"),
     title: "CRM Project",
     category: "Web App Development",
   },
   {
-    img: require("@/img/task.webp"),
+    img: require("@/assets/img/task.webp"),
     title: "Task Management",
     category: "Web App Development",
   },
   {
-    img: require("@/img/exp.png"),
+    img: require("@/assets/img/exp.png"),
     title: "Expense Manager",
     category: "Web App Development",
   },

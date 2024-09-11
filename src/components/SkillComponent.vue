@@ -6,19 +6,7 @@
 
     <div class="skills-content">
       <div class="box">
-        <img src="../img/fe-devlop.jpg" alt="Front-end Development" />
-        <h3>Front-end Development</h3>
-        <p>
-          Front-end development involves crafting the visual and interactive aspects of a
-          website or application. It’s about creating engaging user interfaces that
-          provide a smooth and intuitive experience. By translating design concepts into
-          functional code, front-end developers ensure that users have a pleasant and
-          efficient interaction with digital products.
-        </p>
-      </div>
-
-      <div class="box">
-        <img src="../img/back-develop.png" alt="Back-end Development" />
+        <img src="@/assets/img/back-develop.png" alt="Back-end Development" />
         <h3>Back-end Development</h3>
         <p>
           Back-end development focuses on the server side of web applications. It involves
@@ -30,7 +18,7 @@
       </div>
 
       <div class="box">
-        <img src="../img/multi-task.png" alt="Dynamic Involvement" />
+        <img src="@/assets/img/multi-task.png" alt="Dynamic Involvement" />
         <h3>Dynamic Involvement</h3>
         <p>
           Dynamic involvement reflects an individual's active participation in a variety

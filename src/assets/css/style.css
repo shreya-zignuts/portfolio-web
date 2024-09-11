@@ -6,7 +6,6 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-style: italic;
 }
 
 :root {
@@ -72,10 +71,12 @@ section {
 }
 
 .home {
-    height: 100vh;
+    /* min-height */
+    min-height: 100vh; 
     width: 100%;
     position: relative;
-    background: url(../../img/fbgf.jpg);
+    /* merge 3 lines */
+    background: url(../img/fbgf.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -104,6 +105,7 @@ span {
 .home-text h3 {
     font-size: 24px;
     font-weight: 600;
+    /* use margin/padding only */
     margin-bottom: 3rem;
 }
 
@@ -114,6 +116,7 @@ header.sticky {
 }
 
 .about {
+    /* normal use flex only */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -232,6 +235,7 @@ header.sticky {
     margin-bottom: 1.5rem;
 }
 
+/* use div here */
 .row {
     padding: 25px;
     background: #12141c;
@@ -309,6 +313,7 @@ header.sticky {
     padding: 30px;
     border-radius: 15px;
     /* Rounded corners */
+    /* browser friendly kit */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     /* Soft shadow */
     display: flex;
@@ -358,6 +363,7 @@ header.sticky {
     background: #1f2833;
     border-radius: 50%;
     color: #7729a5;
+    /* line-height/text-align-center */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -367,7 +373,7 @@ header.sticky {
 }
 
 .contact-icons a:hover {
-    transform: scale(1.1) translateY(-3px);
+    /* normal hover effect/color change */
     color: #fff;
     background: #7729a5;
     /* Inverted color on hover */
@@ -420,6 +426,7 @@ header.sticky {
     border-radius: 0.5rem;
 }
 
+/* use bootstrap breakpoints */
 @media (max-width: 1325px) {
     header {
         padding: 16px 6%;
