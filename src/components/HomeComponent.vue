@@ -38,33 +38,14 @@ onMounted(() => {
       opacity: 1,
       y: 0,
       duration: 1,
-      ease: "power1.inOut", // Dramatic easing
+      ease: "power4.out", // Fast start, slow end easing
       stagger: 0.1, // Delay between each letter animation
       repeat: -1,
-      repeatDelay: 2,
       yoyo: true,
-      delay: 2,
+      delay: 0,
     }
   );
-
-  // Flower animation for the "Shreya" text
-  gsap.to(".animated-text", {
-    scale: 1.5,
-    rotation: 360,
-    duration: 4,
-    repeat: -1,
-    repeatDelay: 3,
-    ease: "elastic.out(1, 0.3)",
-    yoyo: true,
-    transformOrigin: "center center",
-  });
 });
 </script>
 
-<style scoped>
-.animated-text {
-  display: inline-block;
-  font-weight: bold;
-  color: #7729a5;
-}
-</style>
+<style scoped></style>

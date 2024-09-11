@@ -46,15 +46,15 @@ import { gsap } from "gsap";
 
 const LanguageText = ref(null);
 const skills = [
-  { name: "C++", img: require("@/img/C++.png"), level: 60 },
-  { name: "HTML", img: require("@/img/html-5.png"), level: 75 },
-  { name: "CSS", img: require("@/img/css-3.png"), level: 60 },
-  { name: "JavaScript", img: require("@/img/js.png"), level: 60 },
-  { name: "JQuery", img: require("@/img/social.png"), level: 50 },
-  { name: "PHP", img: require("@/img/php.png"), level: 75 },
-  { name: "Laravel", img: require("@/img/icons8-laravel-64.png"), level: 80 },
-  { name: "Symfony", img: require("@/img/symfony-seeklogo.svg"), level: 50 },
-  { name: "Vue JS", img: require("@/img/icons8-vue-js-96.png"), level: 30 },
+  { name: "C++", img: require("@/assets/img/C++.png"), level: 60 },
+  { name: "HTML", img: require("@/assets/img/html-5.png"), level: 75 },
+  { name: "CSS", img: require("@/assets/img/css-3.png"), level: 60 },
+  { name: "JavaScript", img: require("@/assets/img/js.png"), level: 60 },
+  { name: "JQuery", img: require("@/assets/img/social.png"), level: 50 },
+  { name: "PHP", img: require("@/assets/img/php.png"), level: 75 },
+  { name: "Laravel", img: require("@/assets/img/icons8-laravel-64.png"), level: 80 },
+  { name: "Symfony", img: require("@/assets/img/symfony-seeklogo.svg"), level: 50 },
+  { name: "Vue JS", img: require("@/assets/img/icons8-vue-js-96.png"), level: 30 },
 ];
 
 const animateOnScroll = (entries) => {
@@ -90,7 +90,7 @@ onMounted(() => {
       ease: "none",
       repeat: -1,
       modifiers: {
-        x: gsap.utils.unitize((x) => parseFloat(x) % containerWidth), 
+        x: gsap.utils.unitize((x) => parseFloat(x) % containerWidth),
       },
     }
   );

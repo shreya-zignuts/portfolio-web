@@ -39,13 +39,13 @@ const achievementImages = ref([]);
 
 const achievements = [
   {
-    img: require("@/img/type.webp"),
-    title: "Typing Wizard",
+    img: require("@/assets/img/bad.avif"),
+    title: "Badminton Champion",
     description:
-      "Participated in college competition typing competition, and reached the semifinals.",
+      "Won the Badminton Championship at the Modasa State Police Games.",
   },
   {
-    img: require("@/img/kbddi.avif"),
+    img: require("@/assets/img/kbddi.avif"),
     title: "SGFI Kabaddi Player",
     description:
       "Represented my school as an SGFI (School Games Federation of India) Kabaddi player.",

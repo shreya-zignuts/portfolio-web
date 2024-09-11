@@ -16,23 +16,22 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 onMounted(() => {
-  const menu = document.querySelector('#menu-icon');
-  const navbar = document.querySelector('.navbar');
+  const menu = document.querySelector("#menu-icon");
+  const navbar = document.querySelector(".navbar");
 
   menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    menu.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
   };
 
   window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    menu.classList.remove("bx-x");
+    navbar.classList.remove("active");
   };
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
